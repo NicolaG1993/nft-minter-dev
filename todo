@@ -1,0 +1,7 @@
+contract va rifatto per production mode - aggiungere prezzo via smart contract - scrivere in solidity?
+creare pop up per allerts (vedi Wallet Fetch data.status)
+
+
+creare form per minter -> 
+• devo prima fare upload img to IPFS, via Pinata 🧨
+• poi devo prendere l'URL dell'img da Pinata, aggiungere Titolo e descrizione e fare il pinning, sempre via Pinata e web3 -> alchemy (?)

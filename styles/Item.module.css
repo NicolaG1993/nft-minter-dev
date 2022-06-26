@@ -1,0 +1,116 @@
+#Item {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+#Item a,
+#Item button {
+    cursor: pointer;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    transition: transform 0.5s;
+    /* background-color: ; */
+    padding: 10px 20px;
+}
+.content {
+    max-width: 1110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: rgb(208, 208, 208);
+}
+
+.picture {
+    background-color: black;
+    width: 50%;
+    min-height: 250px; /* questo valore deve essere dinamico in img, non qua  */
+}
+.wrap {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    width: 50%;
+}
+.info {
+}
+.info > .inline {
+    display: flex;
+    margin: 25px 0;
+}
+.info > .inline > p:nth-child(1) {
+    margin: 0 15px 0 0;
+}
+.info > .inline > p:nth-child(2) {
+    font-weight: bold;
+    margin: 0;
+}
+.info > .inline > a:nth-child(2) {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0;
+}
+.info > .buy {
+    padding: 8px 16px;
+    min-width: 150px;
+    margin-right: 40px;
+    border: 1.5px solid black;
+    border-radius: 40px;
+    line-height: 1.5;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+.info > .alert {
+    padding: 8px 16px;
+    min-width: 150px;
+    border-radius: 40px;
+    line-height: 1.5;
+    border: 1.5px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+.info > .buy:hover,
+.info > .alert:hover {
+    border: 1.5px solid rgba(0, 0, 0, 0);
+    background-color: darkgrey;
+}
+
+.more {
+    width: 100%;
+    min-height: 50vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(245, 245, 245);
+}
+
+.more button {
+    padding: 8px 16px;
+    height: 42px;
+    min-width: 150px;
+    border: 1.5px solid black;
+    border-radius: 40px;
+    line-height: 1.5;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+.more button:hover {
+    border: 1.5px solid rgba(0, 0, 0, 0);
+    background-color: black;
+    color: white;
+}

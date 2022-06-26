@@ -1,0 +1,69 @@
+.hamBtn,
+.hamBtn-active {
+    width: 30px;
+    height: 40px;
+    position: relative;
+    /* justify-self: end;
+    align-self: center; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+    cursor: pointer;
+}
+.stick {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.stick:before,
+.stick:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.stick:before {
+    top: -10px;
+}
+.stick:after {
+    top: 10px;
+}
+
+.hamBtn-active .stick {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    right: 250px;
+}
+.hamBtn-active .stick:before {
+    background: black;
+    top: 0;
+    transform: rotate(45deg);
+}
+.hamBtn-active .stick:after {
+    background: black;
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.hamBtn:hover > .stick,
+.hamBtn:hover > .stick:before,
+.hamBtn:hover > .stick:after {
+    background: rgb(40, 40, 40);
+}
+.hamBtn-active:hover > .stick:before,
+.hamBtn-active:hover > .stick:after {
+    background: rgb(40, 40, 40);
+}
+.hamBtn-active:hover > .stick {
+    background: rgba(0, 0, 0, 0);
+}
