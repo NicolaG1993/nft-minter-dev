@@ -302,12 +302,16 @@ export default function Minter() {
                                         ...styles,
                                         transition: "0.2s ease",
                                         backgroundColor: isFocused
-                                            ? "rgb(245, 245, 245)"
+                                            ? "white"
                                             : "white",
                                         color: "black",
                                         cursor: isDisabled
                                             ? "not-allowed"
                                             : "pointer",
+                                        "&:hover": {
+                                            backgroundColor:
+                                                "rgb(245, 245, 245)",
+                                        },
                                     }),
                                 }}
                             />

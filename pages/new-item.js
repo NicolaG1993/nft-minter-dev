@@ -7,6 +7,7 @@ export default function NewItem() {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
     const [file, setFile] = useState();
+    const [NFT, setNFT] = useState();
 
     const onSubmit = async () => {
         // const res = await mintNFT(file, name, description);
@@ -21,10 +22,11 @@ export default function NewItem() {
 
     //INFO DIV
     const infos = [
-        `Simply add your asset's link, name, and description, then press "Mint NFT"`,
-        "File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB",
+        `Simply add your item's picture, title, and infos, then press "Submit"`,
+        "File types supported: JPG, PNG, GIF, SVG, WEBM. Max size: 100 MB",
         "This is the collection where your item will appear",
-        "The number of items that can be minted",
+        "Add the link to the NFT you want to connect to this product",
+        "The number of items that are in stock",
     ];
     const [selectedInfo, setSelectedInfo] = useState("");
 
@@ -142,7 +144,7 @@ export default function NewItem() {
                         <div className={styles["input-box"]}>
                             <input
                                 type="text"
-                                placeholder="e.g. My first NFT!"
+                                placeholder="e.g. My product!"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
@@ -232,12 +234,16 @@ export default function NewItem() {
                                         ...styles,
                                         transition: "0.2s ease",
                                         backgroundColor: isFocused
-                                            ? "rgb(245, 245, 245)"
+                                            ? "white"
                                             : "white",
                                         color: "black",
                                         cursor: isDisabled
                                             ? "not-allowed"
                                             : "pointer",
+                                        "&:hover": {
+                                            backgroundColor:
+                                                "rgb(245, 245, 245)",
+                                        },
                                     }),
                                 }}
                             />
@@ -260,7 +266,21 @@ export default function NewItem() {
 
                     <div className={styles["form-line"]}>
                         <div className={styles["heading-box"]}>
-                            <h3>Supply:</h3>
+                            <h3>Connect NFT:</h3>
+                        </div>
+
+                        <div className={styles["input-box"]}>
+                            <input
+                                type="text"
+                                placeholder="e.g. Link to the NFT"
+                                onChange={(e) => setNFT(e.target.value)}
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles["form-line"]}>
+                        <div className={styles["heading-box"]}>
+                            <h3>In stock:</h3>
                             <p
                                 onMouseEnter={() => (
                                     setOveredIcons(true),

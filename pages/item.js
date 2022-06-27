@@ -175,7 +175,9 @@ export default function Item() {
                                     <p>Original listing: </p>
                                     <p>€89.00</p>
                                 </div>
-                                <button className={styles.buy}>Buy NFT</button>
+                                <button className={styles.buy}>
+                                    Buy Product
+                                </button>
                                 <button className={styles.alert}>Like</button>
                             </div>
                         </div>

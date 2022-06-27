@@ -8,6 +8,9 @@
 #Item button {
     cursor: pointer;
 }
+#Item h1 {
+    font-size: 48px;
+}
 .section {
     display: flex;
     justify-content: center;
@@ -29,13 +32,16 @@
     display: flex;
     flex-direction: row;
     padding: 15px;
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(220, 220, 220);
+    border-radius: 8px;
 }
 
 .picture {
     background-color: black;
     width: 50%;
     min-height: 250px; /* questo valore deve essere dinamico in img, non qua  */
+    overflow: hidden;
+    position: relative;
 }
 .wrap {
     display: flex;
@@ -44,6 +50,7 @@
     width: 50%;
 }
 .info {
+    margin-bottom: 20px;
 }
 .info > .inline {
     display: flex;
@@ -62,30 +69,35 @@
     margin: 0;
 }
 .info > .buy {
-    padding: 8px 16px;
-    min-width: 150px;
-    margin-right: 40px;
-    border: 1.5px solid black;
-    border-radius: 40px;
-    line-height: 1.5;
-    background-color: transparent;
+    border: 2px dodgerblue solid;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+    transition: 0.1s ease;
+    cursor: pointer;
+    margin-right: 20px;
 }
 .info > .alert {
-    padding: 8px 16px;
-    min-width: 150px;
-    border-radius: 40px;
-    line-height: 1.5;
-    border: 1.5px solid rgba(0, 0, 0, 0);
-    background-color: transparent;
+    border: 2px rgb(220, 220, 220) solid;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: rgb(220, 220, 220);
+    color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 .info > .buy:hover,
 .info > .alert:hover {
-    border: 1.5px solid rgba(0, 0, 0, 0);
-    background-color: darkgrey;
+    color: white;
+    border: 2px rgb(0, 118, 236) solid;
+    background-color: rgb(0, 118, 236);
 }
 
 .more {
@@ -94,23 +106,25 @@
     padding: 40px 20px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     /* align-items: center; */
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(220, 220, 220);
 }
 
 .more button {
-    padding: 8px 16px;
-    height: 42px;
-    min-width: 150px;
-    border: 1.5px solid black;
-    border-radius: 40px;
-    line-height: 1.5;
-    background-color: transparent;
+    border: 2px rgb(93, 93, 93) solid;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: rgb(220, 220, 220);
+    color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 .more button:hover {
-    border: 1.5px solid rgba(0, 0, 0, 0);
-    background-color: black;
+    border: 2px rgb(0, 118, 236) solid;
+    background-color: rgb(0, 118, 236);
     color: white;
 }
