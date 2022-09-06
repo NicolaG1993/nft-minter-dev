@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/Item.module.css";
 
-const items = [
+const nfts = [
     {
         id: 1,
         title: "New York City",
@@ -16,16 +16,9 @@ const items = [
         price: "75",
         pic: "https://www.bmbf.de/SharedDocs/Bilder/de/bmbf/bmbf_datenbank/5/51/51081.jpg?__blob=poster&v=1",
     },
-    // {
-    //     id: 3,
-    //     title: "A Great Sculpture",
-    //     slug: "a-great-sculpture",
-    //     price: "100",
-    //     pic: "https://www.pressinbag.it/images/2020/07/15/dante-il-pensatore-di-rodin_large.jpg",
-    // },
 ];
 
-export default function Item({ item }) {
+export default function NFT({ item }) {
     console.log("item", item);
 
     return (
@@ -44,7 +37,7 @@ export default function Item({ item }) {
                         <div className={styles.wrap}>
                             <div className={styles.info}>
                                 <h1>{item.title}</h1>
-                                <h2>{item.price} €</h2>
+                                <h2>{item.price} ETH</h2>
                                 {/* <div className={styles.inline}>
                                     <p>Owned by: </p>
                                     <a>Jack White</a>
@@ -61,9 +54,7 @@ export default function Item({ item }) {
                                     <p>Original listing: </p>
                                     <p>€89.00</p>
                                 </div> */}
-                                <button className={styles.buy}>
-                                    Buy Product
-                                </button>
+                                <button className={styles.buy}>Buy NFT</button>
                                 <button className={styles.alert}>Like</button>
                             </div>
                         </div>
@@ -84,7 +75,7 @@ export async function getServerSideProps(context) {
     const { params } = context;
     const { slug } = params;
 
-    let item = items.filter((el) => el.slug === slug);
+    let item = nfts.filter((el) => el.slug === slug);
 
     console.log("slug:", slug);
     console.log("item:", item);

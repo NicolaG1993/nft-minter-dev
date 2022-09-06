@@ -11,6 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 6em 0;
+}
+
+.main h1 {
+    font-size: 8em;
 }
 
 .footer {
@@ -109,6 +114,11 @@
     margin-left: 0.5rem;
 }
 
+@media (min-width: 1300px) {
+    .main h1 {
+        font-size: 16em;
+    }
+}
 @media (max-width: 600px) {
     .grid {
         width: 100%;

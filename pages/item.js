@@ -13,6 +13,8 @@ import styles from "../styles/Item.module.css";
 
 // import { pinJSONToIPFS } from "../shared/utils/pinata.js";
 
+/* ELIMINERÓ QUESTO FILE */
+
 export default function Item() {
     // WALLET
     /* const fetchWallet = () => {
@@ -157,7 +159,7 @@ export default function Item() {
                         </div>
                         <div className={styles.wrap}>
                             <div className={styles.info}>
-                                <h1>Product Title</h1>
+                                <h1>NFT Title</h1>
                                 <h2>0.10 ETH</h2>
                                 <div className={styles.inline}>
                                     <p>Owned by: </p>
@@ -175,9 +177,7 @@ export default function Item() {
                                     <p>Original listing: </p>
                                     <p>€89.00</p>
                                 </div>
-                                <button className={styles.buy}>
-                                    Buy Product
-                                </button>
+                                <button className={styles.buy}>Buy NFT</button>
                                 <button className={styles.alert}>Like</button>
                             </div>
                         </div>

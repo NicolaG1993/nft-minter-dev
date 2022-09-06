@@ -14,6 +14,10 @@ const links = [
         title: "Marketplace",
     },
     {
+        to: "/marketplace-nft",
+        title: "NFTs",
+    },
+    {
         to: "/minter",
         title: "Minter",
     },

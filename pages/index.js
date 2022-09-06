@@ -17,9 +17,9 @@ export default function Home() {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    Welcome to{" "}
+                    SANTONI{" "}
                     <Link href={"/"}>
-                        <a>the Website!</a>
+                        <a>SHOES</a>
                     </Link>
                 </h1>
 
@@ -38,22 +38,22 @@ export default function Home() {
                         </a>
                     </Link>
 
+                    <Link href={"/augmented-reality"}>
+                        <a className={styles.card}>
+                            <h2>NFTs &rarr;</h2>
+                            <p>
+                                Take a look at all the products-related NFTs
+                                available on our website.
+                            </p>
+                        </a>
+                    </Link>
+
                     <Link href={"/item"}>
                         <a className={styles.card}>
                             <h2>Examples &rarr;</h2>
                             <p>
                                 Discover the product example page, its
                                 information and features.
-                            </p>
-                        </a>
-                    </Link>
-
-                    <Link href={"/minter"}>
-                        <a className={styles.card}>
-                            <h2>NFT Minter &rarr;</h2>
-                            <p>
-                                See the form to create a new NFT on the Ethereum
-                                blockchain.
                             </p>
                         </a>
                     </Link>
@@ -65,6 +65,26 @@ export default function Home() {
                             to the website.
                         </p>
                     </div>
+
+                    <Link href={"/minter"}>
+                        <a className={styles.card}>
+                            <h2>NFT Minter &rarr;</h2>
+                            <p>
+                                See the form to create a new NFT on the Ethereum
+                                blockchain.
+                            </p>
+                        </a>
+                    </Link>
+
+                    <Link href={"/augmented-reality"}>
+                        <a className={styles.card}>
+                            <h2>Augmented Reality &rarr;</h2>
+                            <p>
+                                Watch this video and discover the Augmented
+                                Reality.
+                            </p>
+                        </a>
+                    </Link>
                 </div>
             </main>
 

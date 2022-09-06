@@ -9,23 +9,16 @@ const items = [
         id: 1,
         title: "New York City",
         slug: "nyc",
-        price: "40",
+        price: "5",
         pic: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/new-york-city-black-white-crystal-wightman.jpg",
     },
     {
         id: 2,
         title: "The Ocean",
         slug: "the-ocean",
-        price: "75",
+        price: "8",
         pic: "https://www.bmbf.de/SharedDocs/Bilder/de/bmbf/bmbf_datenbank/5/51/51081.jpg?__blob=poster&v=1",
     },
-    // {
-    //     id: 3,
-    //     title: "A Great Sculpture",
-    //     slug: "a-great-sculpture",
-    //     price: "100",
-    //     pic: "https://www.pressinbag.it/images/2020/07/15/dante-il-pensatore-di-rodin_large.jpg",
-    // },
 ];
 
 export default function Marketplace() {
@@ -154,7 +147,7 @@ export default function Marketplace() {
                 <div className={styles["items-list"]}>
                     {items.map((el) => (
                         <>
-                            <Link href={`/item/${el.slug}`}>
+                            <Link href={`/nft/${el.slug}`}>
                                 <a>
                                     <div
                                         key={el.id}
@@ -178,7 +171,7 @@ export default function Marketplace() {
                                             className={styles["item-infos-box"]}
                                         >
                                             <h3>{el.title}</h3>
-                                            <p>{el.price}€</p>
+                                            <p>{el.price} ETH</p>
                                         </div>
                                     </div>
                                 </a>
