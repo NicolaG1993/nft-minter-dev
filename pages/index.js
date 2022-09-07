@@ -38,7 +38,7 @@ export default function Home() {
                         </a>
                     </Link>
 
-                    <Link href={"/augmented-reality"}>
+                    <Link href={"/marketplace-nft"}>
                         <a className={styles.card}>
                             <h2>NFTs &rarr;</h2>
                             <p>

@@ -21,6 +21,10 @@ const links = [
         to: "/minter",
         title: "Minter",
     },
+    {
+        to: "/augmented-reality",
+        title: "Augmented Reality",
+    },
 ];
 
 export default function Header() {
