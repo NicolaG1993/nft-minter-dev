@@ -48,7 +48,7 @@ export default function Home() {
                         </a>
                     </Link>
 
-                    <Link href={"/item"}>
+                    {/* <Link href={"/item"}>
                         <a className={styles.card}>
                             <h2>Examples &rarr;</h2>
                             <p>
@@ -64,7 +64,7 @@ export default function Home() {
                             Open the side menu and connect your Metamask wallet
                             to the website.
                         </p>
-                    </div>
+                    </div> */}
 
                     <Link href={"/minter"}>
                         <a className={styles.card}>
