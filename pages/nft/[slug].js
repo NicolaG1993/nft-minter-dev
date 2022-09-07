@@ -4,24 +4,24 @@ import styles from "../../styles/Item.module.css";
 const nfts = [
     {
         id: 1,
-        title: "Mocassino nero da uomo in pelle di coccodrillo",
-        slug: "mocassino-nero",
+        title: "NFT Title",
+        slug: "nft-1",
         price: "10,00",
-        pic: "/assets/mocassino-nero.jpg",
+        pic: "/assets/nft1.jpg",
     },
     {
         id: 2,
-        title: "Mocassino con doppia fibbia da uomo in pelle antica verde",
-        slug: "mocassino-verde",
+        title: "NFT Title",
+        slug: "nft-2",
         price: "10,00",
-        pic: "/assets/mocassino-verde.jpg",
+        pic: "/assets/nft2.jpg",
     },
     {
         id: 3,
-        title: "Panelled low-top sneakers",
-        slug: "sneakers",
+        title: "NFT Title",
+        slug: "nft-3",
         price: "10,00",
-        pic: "/assets/sneakers.jpg",
+        pic: "/assets/nft3.jpg",
     },
 ];
 
@@ -33,23 +33,23 @@ export default function NFT({ item }) {
             <section className={styles.section}>
                 <div className={styles.content}>
                     <div className={styles.card}>
-                        <div className={styles.picture}>
+                        <div className={styles.pictureNFT}>
                             <Image
                                 src={item.pic ? item.pic : "/pics/Logo.jpg"}
                                 alt={item.title}
                                 layout="fill"
-                                objectFit="contain"
-                                // objectFit="cover"
+                                // objectFit="contain"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.wrap}>
                             <div className={styles.info}>
                                 <h1>{item.title}</h1>
                                 <h2>{item.price} ETH</h2>
-                                {/* <div className={styles.inline}>
+                                <div className={styles.inline}>
                                     <p>Owned by: </p>
                                     <a>Jack White</a>
-                                </div> */}
+                                </div>
                                 <div className={styles.inline}>
                                     <p>Created by: </p>
                                     <a>Jack White</a>

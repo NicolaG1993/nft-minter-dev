@@ -16,16 +16,19 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Santoni{" "}
-                    <Link href={"/"}>
-                        <a>Shoes</a>
-                    </Link>
-                </h1>
+                <div className={styles.headingWrap}>
+                    <h1 className={styles.title}>
+                        Santoni{" "}
+                        <Link href={"/marketplace"}>
+                            <a>Shoes</a>
+                        </Link>
+                    </h1>
+                    <div className={styles.imageWrap}></div>
 
-                <p className={styles.description}>
-                    This App is a demo version, check out the pages
-                </p>
+                    <p className={styles.description}>
+                        This App is a demo version, check out the pages
+                    </p>
+                </div>
 
                 <div className={styles.grid}>
                     <Link href={"/marketplace"}>

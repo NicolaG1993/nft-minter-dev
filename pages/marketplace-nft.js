@@ -4,27 +4,27 @@ import Link from "next/link";
 import Select from "react-select";
 import styles from "../styles/Marketplace.module.css";
 
-const items = [
+const nfts = [
     {
         id: 1,
-        title: "Mocassino nero da uomo in pelle di coccodrillo",
-        slug: "mocassino-nero",
+        title: "NFT Title",
+        slug: "nft-1",
         price: "10,00",
-        pic: "/assets/mocassino-nero.jpg",
+        pic: "/assets/nft1.jpg",
     },
     {
         id: 2,
-        title: "Mocassino con doppia fibbia da uomo in pelle antica verde",
-        slug: "mocassino-verde",
+        title: "NFT Title",
+        slug: "nft-2",
         price: "10,00",
-        pic: "/assets/mocassino-verde.jpg",
+        pic: "/assets/nft2.jpg",
     },
     {
         id: 3,
-        title: "Panelled low-top sneakers",
-        slug: "sneakers",
+        title: "NFT Title",
+        slug: "nft-3",
         price: "10,00",
-        pic: "/assets/sneakers.jpg",
+        pic: "/assets/nft3.jpg",
     },
 ];
 
@@ -152,7 +152,7 @@ export default function Marketplace() {
 
             <section>
                 <div className={styles["items-list"]}>
-                    {items.map((el) => (
+                    {nfts.map((el) => (
                         <>
                             <Link href={`/nft/${el.slug}`}>
                                 <a>
