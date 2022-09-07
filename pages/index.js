@@ -15,6 +15,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <div className={styles.imageWrap}></div>
+
             <main className={styles.main}>
                 <div className={styles.headingWrap}>
                     <h1 className={styles.title}>
@@ -23,35 +25,35 @@ export default function Home() {
                             <a>Shoes</a>
                         </Link>
                     </h1>
-                    <div className={styles.imageWrap}></div>
 
                     <p className={styles.description}>
                         This App is a demo version, check out the pages
                     </p>
                 </div>
 
-                <div className={styles.grid}>
-                    <Link href={"/marketplace"}>
-                        <a className={styles.card}>
-                            <h2>Marketplace &rarr;</h2>
-                            <p>
-                                Search and filter all the products available in
-                                our shop.
-                            </p>
-                        </a>
-                    </Link>
+                <div className={styles.gridWrap}>
+                    <div className={styles.grid}>
+                        <Link href={"/marketplace"}>
+                            <a className={styles.card}>
+                                <h2>Marketplace &rarr;</h2>
+                                <p>
+                                    Search and filter all the products available
+                                    in our shop.
+                                </p>
+                            </a>
+                        </Link>
 
-                    <Link href={"/marketplace-nft"}>
-                        <a className={styles.card}>
-                            <h2>NFTs &rarr;</h2>
-                            <p>
-                                Take a look at all the products-related NFTs
-                                available on our website.
-                            </p>
-                        </a>
-                    </Link>
+                        <Link href={"/marketplace-nft"}>
+                            <a className={styles.card}>
+                                <h2>NFTs &rarr;</h2>
+                                <p>
+                                    Take a look at all the products-related NFTs
+                                    available on our website.
+                                </p>
+                            </a>
+                        </Link>
 
-                    {/* <Link href={"/item"}>
+                        {/* <Link href={"/item"}>
                         <a className={styles.card}>
                             <h2>Examples &rarr;</h2>
                             <p>
@@ -69,25 +71,26 @@ export default function Home() {
                         </p>
                     </div> */}
 
-                    <Link href={"/minter"}>
-                        <a className={styles.card}>
-                            <h2>NFT Minter &rarr;</h2>
-                            <p>
-                                See the form to create a new NFT on the Ethereum
-                                blockchain.
-                            </p>
-                        </a>
-                    </Link>
+                        <Link href={"/minter"}>
+                            <a className={styles.card}>
+                                <h2>NFT Minter &rarr;</h2>
+                                <p>
+                                    See the form to create a new NFT on the
+                                    Ethereum blockchain.
+                                </p>
+                            </a>
+                        </Link>
 
-                    <Link href={"/augmented-reality"}>
-                        <a className={styles.card}>
-                            <h2>Augmented Reality &rarr;</h2>
-                            <p>
-                                Watch this video and discover the Augmented
-                                Reality.
-                            </p>
-                        </a>
-                    </Link>
+                        <Link href={"/augmented-reality"}>
+                            <a className={styles.card}>
+                                <h2>Augmented Reality &rarr;</h2>
+                                <p>
+                                    Watch this video and discover the Augmented
+                                    Reality.
+                                </p>
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </main>
 

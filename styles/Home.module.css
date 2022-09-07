@@ -1,6 +1,28 @@
 .container {
     min-height: 100vh;
     padding-top: 60px;
+    position: relative;
+}
+
+.imageWrap {
+    background-image: url("/assets/mocassino-verde.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    margin-top: 60px;
+}
+
+.headingWrap {
+    /* height: 50vh; */
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 6em; */
 }
 
 .main {
@@ -11,21 +33,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 6em 0;
+    margin-top: 6em;
+    position: relative;
+    z-index: 1;
     /* padding: 0px 20px; */
 }
 
 .main h1 {
     font-size: 10em;
     padding: 0px 20px;
-}
-.imageWrap {
-    background-image: url("/assets/mocassino-verde.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 5em;
+    line-height: 0.9em;
+    /* color: white; */
 }
 
 .footer {
@@ -35,6 +53,11 @@
     border-top: 1px solid #eaeaea;
     justify-content: center;
     align-items: center;
+    height: 140px;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    position: relative;
 }
 
 .footer a {
@@ -45,7 +68,8 @@
 }
 
 .title a {
-    color: #0070f3;
+    color: #fd6c41;
+    /* color: #0070f3; */
     text-decoration: none;
 }
 
@@ -68,8 +92,11 @@
 
 .description {
     margin: 4rem 0;
-    line-height: 1.5;
+    line-height: 1.7;
     font-size: 1.5rem;
+    color: white;
+    background: #fd6c41;
+    padding: 0 15px;
 }
 
 .code {
@@ -80,13 +107,23 @@
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
+.gridWrap {
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eaeaea;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding-bottom: 6em;
+    min-height: 65vh;
+}
 .grid {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 800px;
+    margin-top: 6em;
 }
 
 .card {
@@ -104,8 +141,10 @@
 .card:hover,
 .card:focus,
 .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: #fd6c41;
+    border-color: #fd6c41;
+    /* color: #0070f3;
+    border-color: #0070f3; */
 }
 
 .card h2 {

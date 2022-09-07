@@ -142,12 +142,16 @@
     font-size: 16px;
     transition: 0.1s ease;
     cursor: pointer;
-    border: 2px rgb(0, 118, 236) solid;
-    background-color: rgb(0, 118, 236);
+    border: 2px #fd6c41 solid;
+    background-color: #fd6c41;
+    /* border: 2px rgb(0, 118, 236) solid;
+    background-color: rgb(0, 118, 236); */
 }
 .addButton:hover {
-    border: 2px dodgerblue solid;
-    background-color: dodgerblue;
+    border: 2px #ff8c3f solid;
+    background-color: #ff8c3f;
+    /* border: 2px dodgerblue solid; */
+    /* background-color: dodgerblue; */
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
     /* color: black; */
 }
