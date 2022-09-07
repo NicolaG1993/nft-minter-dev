@@ -10,7 +10,7 @@
 }
 #Item h1 {
     font-size: 48px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .section {
     display: flex;
@@ -20,7 +20,7 @@
     min-height: 600px;
     transition: transform 0.5s;
     /* background-color: ; */
-    padding: 10px 20px;
+    padding: 40px 20px;
 }
 .content {
     max-width: 1110px;
@@ -38,7 +38,8 @@
 }
 
 .picture {
-    background-color: rgb(180, 180, 180);
+    border: 1px solid rgb(180, 180, 180);
+    background-color: white;
     width: 50%;
     min-height: 250px; /* questo valore deve essere dinamico in img, non qua  */
     overflow: hidden;

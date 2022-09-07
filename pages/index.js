@@ -17,9 +17,9 @@ export default function Home() {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    SANTONI{" "}
+                    Santoni{" "}
                     <Link href={"/"}>
-                        <a>SHOES</a>
+                        <a>Shoes</a>
                     </Link>
                 </h1>
 

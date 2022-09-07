@@ -11,12 +11,7 @@ const nextConfig = {
 
     disableStaticImages: true,
     images: {
-        domains: [
-            "cdn.chec.io",
-            "images.fineartamerica.com",
-            "www.bmbf.de",
-            "www.pressinbag.it",
-        ],
+        domains: ["cdn.chec.io"],
     },
 };
 

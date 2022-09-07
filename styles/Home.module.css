@@ -12,10 +12,11 @@
     justify-content: center;
     align-items: center;
     margin: 6em 0;
+    padding: 0px 20px;
 }
 
 .main h1 {
-    font-size: 8em;
+    font-size: 10em;
 }
 
 .footer {

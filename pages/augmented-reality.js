@@ -26,7 +26,7 @@ export default function AugmentedReality() {
                         videoId="hhVo6uy-Uhw"
                         opts={opts}
                         style={style}
-                        onReady={(e) => onReady(e)}
+                        // onReady={(e) => onReady(e)}
                     />
                 </div>
             </section>

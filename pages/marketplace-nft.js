@@ -7,17 +7,24 @@ import styles from "../styles/Marketplace.module.css";
 const items = [
     {
         id: 1,
-        title: "New York City",
-        slug: "nyc",
-        price: "5",
-        pic: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/new-york-city-black-white-crystal-wightman.jpg",
+        title: "Mocassino nero da uomo in pelle di coccodrillo",
+        slug: "mocassino-nero",
+        price: "10,00",
+        pic: "/assets/mocassino-nero.jpg",
     },
     {
         id: 2,
-        title: "The Ocean",
-        slug: "the-ocean",
-        price: "8",
-        pic: "https://www.bmbf.de/SharedDocs/Bilder/de/bmbf/bmbf_datenbank/5/51/51081.jpg?__blob=poster&v=1",
+        title: "Mocassino con doppia fibbia da uomo in pelle antica verde",
+        slug: "mocassino-verde",
+        price: "10,00",
+        pic: "/assets/mocassino-verde.jpg",
+    },
+    {
+        id: 3,
+        title: "Panelled low-top sneakers",
+        slug: "sneakers",
+        price: "10,00",
+        pic: "/assets/sneakers.jpg",
     },
 ];
 
@@ -182,10 +189,10 @@ export default function Marketplace() {
             </section>
 
             <div className={styles["form-line"]}>
-                <Link href={`/new-item`}>
+                <Link href={`/minter`}>
                     <a>
                         <button id="addButton" className={styles["addButton"]}>
-                            Add Product
+                            Add NFT
                         </button>
                     </a>
                 </Link>

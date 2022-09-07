@@ -4,25 +4,25 @@ import styles from "../../styles/Item.module.css";
 const items = [
     {
         id: 1,
-        title: "New York City",
-        slug: "nyc",
-        price: "40",
-        pic: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/new-york-city-black-white-crystal-wightman.jpg",
+        title: "Mocassino nero da uomo in pelle di coccodrillo",
+        slug: "mocassino-nero",
+        price: "3.950,00",
+        pic: "/assets/mocassino-nero.jpg",
     },
     {
         id: 2,
-        title: "The Ocean",
-        slug: "the-ocean",
-        price: "75",
-        pic: "https://www.bmbf.de/SharedDocs/Bilder/de/bmbf/bmbf_datenbank/5/51/51081.jpg?__blob=poster&v=1",
+        title: "Mocassino con doppia fibbia da uomo in pelle antica verde",
+        slug: "mocassino-verde",
+        price: "695,00",
+        pic: "/assets/mocassino-verde.jpg",
     },
-    // {
-    //     id: 3,
-    //     title: "A Great Sculpture",
-    //     slug: "a-great-sculpture",
-    //     price: "100",
-    //     pic: "https://www.pressinbag.it/images/2020/07/15/dante-il-pensatore-di-rodin_large.jpg",
-    // },
+    {
+        id: 3,
+        title: "Panelled low-top sneakers",
+        slug: "sneakers",
+        price: "450,00",
+        pic: "/assets/sneakers.jpg",
+    },
 ];
 
 export default function Item({ item }) {
@@ -38,7 +38,7 @@ export default function Item({ item }) {
                                 src={item.pic ? item.pic : "/pics/Logo.jpg"}
                                 alt={item.title}
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit="contain"
                             />
                         </div>
                         <div className={styles.wrap}>
@@ -50,8 +50,8 @@ export default function Item({ item }) {
                                     <a>Jack White</a>
                                 </div> */}
                                 <div className={styles.inline}>
-                                    <p>Created by: </p>
-                                    <a>Jack White</a>
+                                    <p>Brand: </p>
+                                    <a>Santoni Shoes</a>
                                 </div>
                                 <div className={styles.inline}>
                                     <p>Released: </p>
